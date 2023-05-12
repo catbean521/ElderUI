@@ -1,6 +1,7 @@
 package com.example.elderui;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,16 @@ public class HomepageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_homepage);
+        //横竖屏适配
+        if (this.getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+            //竖屏
+            System.out.println("竖屏");
+            setContentView(R.layout.activity_homepage);
+        } else {
+            //横屏
+            System.out.println("横屏");
+            setContentView(R.layout.activity_homepage_landscape);
+        }
 
         ImageButton button_emergency = (ImageButton)findViewById(R.id.emergency_call);
         button_emergency.setOnClickListener(new View.OnClickListener() {

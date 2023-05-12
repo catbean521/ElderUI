@@ -18,20 +18,22 @@
         android:id="@+id/yes"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:background="@drawable/shape_button"
-        android:text="yes"
+        android:text="Yes"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/no"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:textAllCaps="false"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
         android:background="@drawable/shape_button"
-        android:text="no"
+        android:text="No"
         android:textSize="20sp" />
 
 

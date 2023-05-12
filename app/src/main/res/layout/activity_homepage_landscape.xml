@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    >
+
+    <!-- page_left -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <!-- page_left_top -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape_button"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Contacts"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <!-- page_left_contact -->
+            <!-- page_left_contact-Up -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape"
+                    >
+
+                    <!-- emergency_call -->
+                    <ImageButton
+                        android:id="@+id/emergency_call"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:src="@drawable/emergency_call_icon"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        />
+                    <TextView
+                        android:id="@+id/emergency_call_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Emergency Call\n911"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+
+                <!-- contact_1 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape"
+                    >
+                    <ImageButton
+                        android:id="@+id/contact_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        />
+
+                    <TextView
+                        android:id="@+id/contact_1_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Contact One\n(123)456-7890"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- page_left_contact-Dpwn -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <!-- contact_2 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape"
+                    >
+                    <ImageButton
+                        android:id="@+id/contact_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        />
+                    <TextView
+                        android:id="@+id/contact_2_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Contact Two\n(123)456-7890"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+                <!-- contact_3 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shape"
+                    >
+                    <ImageButton
+                        android:id="@+id/contact_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/call_icon"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        />
+                    <TextView
+                        android:id="@+id/contact_3_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Contact Three\n(123)456-7890"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            android:text="Add Contacts"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shape_button"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Turn on Microphone"
+                android:textSize="25dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_button"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--page_right-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4:35pm"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thursday April 27"
+            android:textSize="20dp"
+            />
+
+        <!--battery-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/battery"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15% Charged"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please charge your walker within the next 2days"
+                android:textSize="20dp"
+                android:lineHeight="30dp"
+                android:layout_margin="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+        <!--My Walker-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/shape"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:text="My Walker"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/shape_button"
+                android:text="Go to Charger"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_button"
+                android:text="Park"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Come to me"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_button"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
